@@ -1,0 +1,581 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif; 
+}
+.topheader{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(fotoBGFIX.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(fotoBGFIX.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.header2{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(maritime_BG.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.header3{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(culture_BG.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.header4{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(conservation_BG.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.header5{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pilgrimage_BG.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.header6{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(contactme2_BG.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.header7{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(resources_BG.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+.contact-sect{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(contactme_BG.jpg) ;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+nav{
+   display: flex; 
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+   overflow: auto;
+}
+nav img{
+   width: 150px;
+
+}
+nav-links {
+   flex: 1;
+   text-align: right;
+}
+.nav-links ul li{
+   list-style: none ;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+}
+.nav-links ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 13px;
+}
+.nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #00FF00;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+.text-box{
+   width: 90% ;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.text-box h1{
+   font-size: 65px;
+}
+.text-box p{
+   margin: 10px 0 30px;
+   font-size: 19px;
+   color: white;
+}
+.text-box2{
+   width: 90% ;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.text-box2 h1{
+   font-size: 80px;
+   margin-top: 100px;
+}
+.text-box2 p{
+   margin: 10px 0 40px;
+   font-size: large;
+   color: white;
+}
+.hero-btn{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   font-size: 14px;
+   background:transparent;
+   position: relative;
+   cursor: pointer;
+   box-sizing: border-box;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+.hero-btn:hover{
+   border: 1px solid #fff;
+   background: #00FF00;
+   transition: 0.8s;
+}
+.logoimg{
+   padding-top: 1px;
+   padding-bottom: 1px;
+   padding-right: 1px;
+   padding-left: 1px;
+   width:auto;
+}
+
+nav.fa{
+   display: none;
+}
+
+@media(max-width: 700px){
+   .text-box h1{
+      font-size: 18px;
+   }
+   .text-box p{
+      font-size: 14px;
+   }
+   .nav-links ul li{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+   }
+   .nav-links {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: red;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+   }
+   .nav-links ul li:hover{
+      color: #f1f1f1;
+   }
+   
+   nav.fa{
+      display: block;
+      color: white;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+   }
+}
+
+.Categories{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 40px;
+   
+}
+h1{
+   font-size: 36px;
+   font-weight: bolder;
+   padding-top: 25px;
+}
+p{
+   color:black;
+   font-size: medium;
+   font-weight: 300;
+   line-height: normal;
+   padding: 10px;
+}
+.categories-links{
+   margin-top: 5%;
+   display: flex;
+   justify-content: space-between;
+   flex-basis: 21%;
+   background:  #FFF1FA;
+   border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 10px 12px;
+   justify-content: center;
+}
+.categories-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #00FF00;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+.categories-links ul li:hover::after{
+   width: 100%;
+}
+.categories-links ul li{
+   list-style: none ;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+   margin-top: 5%;
+   justify-content: space-between;
+   margin-top: 5%;
+   justify-content: space-between; 
+   padding: 2px 5px;
+   text-align: center;
+   padding-right: 0px;
+   text-align: center;
+   list-style: inside;
+}
+.categories-links ul li a{
+   color: black;
+   text-decoration: none;
+   font-size: 24px;
+   text-align: center;
+   font-weight: bold;
+}
+.categories-links li p{
+   color: black;
+   text-decoration: none;
+   font-size: 17px;
+   text-align: center;
+   text-justify: inter-word;
+}
+@media(max-width:700px){
+   .row{
+      flex-direction: column;
+   }
+}
+
+.contact {
+   width: 80%;
+   margin: 100px auto;
+   background-image:
+   url(gambarContact.jpg);
+   background-position: center;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ;
+   background-size: cover;
+   text-align: center;
+   padding: 100px 0 ;
+}
+.contact h1{
+   color: white;
+   font-weight: 1000;
+}
+.contact a{
+   color:white
+}
+.contactbutton{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   font-size: 14px;
+   background:transparent;
+   position: relative;
+   cursor: pointer;
+   box-sizing: border-box;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+.contactbutton:hover{
+   border: 1px solid #fff;
+   background: #00FF00;
+   transition: 0.8s;
+}
+@media (max-width: 700px){
+   .contact h1{
+      font-size: 20px;
+   }
+   .footer h4{
+      font-size: x-small;
+   }
+   .more-about img{
+      width: 6%;
+      height: 3%;
+      flex: 100%;
+   }
+}
+
+.footer{
+   width: 100%;
+   text-align: center;
+   padding: 30px 0;
+   background-color: #EFEFEF;
+}
+.footer h4{
+   margin-bottom: 20px;
+   font-weight: 900;
+   font-size: x-large;
+}
+.footer-img {
+   display: flex;
+ }
+ 
+.more-about-text a {
+   width: 100%;
+   text-align: center;
+   color: black;
+   text-decoration: none;
+   font-size: 16px;
+   text-align: center;
+   font-weight: bold;
+   
+}
+.more-about img{
+   width: 2%;
+   height: 1%;
+   padding: 5px;
+   padding-top: 20px;
+   flex: 33.33%;
+}
+
+
+/* categories website */
+.maritime-content{
+   width: 85%;
+   margin:auto;
+   padding-top: 80px;
+   padding-bottom: 50px;
+}
+.examples-links{
+   flex-basis: 48%;
+   padding: 10px 2px;
+}
+.examples-links img{
+   width: 60%;
+   height: 35%;
+   
+}
+.examples-links p{
+   text-align: justify;
+   padding-bottom: 1px;
+   font-size: large;
+}
+/* resources website */
+.resources-content{
+   width: 85%;
+   margin:auto;
+   padding-top: 60px;
+   padding-bottom: 50px;
+}
+.resources-content h1{
+   text-align: center;
+   padding-bottom: 40px;
+}
+.resources-image{
+   flex-basis: 48%;
+   padding: 10px 2px;
+}
+.resources-image img{
+   width: 60%;
+   height: 35%;
+   
+}
+.resources-image p{
+   text-align: justify;
+   padding-bottom: 20px;
+   font-size: large;
+   font-weight: bold;
+}
+.resources-text p{
+   font-size: larger;
+}
+/* contact me */
+
+.contact-sect h1{
+   text-align: center;
+   color: aliceblue;
+   padding-bottom: 100;
+   margin-top: 1000;
+}
+.contact-form{
+   max-width: 600px;
+   margin: auto;
+   padding: 0 10px;
+   overflow: hidden;
+}
+.contact-form-text{
+   display: block;
+   width: 100%;
+   box-sizing: border-box;
+   margin: 16px 0;
+   border: 0;
+   padding: 20px 40px;
+   outline: none;
+   color: black;
+   transition: 0.5s;
+}
+.contact-form-text:focus{
+   box-shadow: 0 0 10px 4px green;
+}
+textarea.contact-form-text{
+   resize: none;
+   height:120px;
+
+}
+.CONTACT-btn{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   font-size: 14px;
+   background:transparent;
+   position: relative;
+   cursor: pointer;
+   box-sizing: border-box;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 10px;
+   padding-left: 10px;
+   text-align: center;
+  
+}
+.CONTACT-btn:hover{
+   border: 1px solid #fff;
+   background: #00FF00;
+   transition: 0.8s;
+}
+
+/* The side navigation menu */
+.sidenav {
+   height: 100%; /* 100% Full-height */
+   width: 0; /* 0 width - change this with JavaScript */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   background-color: #111; /* Black*/
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 60px; /* Place content 60px from the top */
+   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+ }
+ 
+ /* The navigation menu links */
+ .sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+ }
+ 
+ /* When you mouse over the navigation links, change their color */
+ .sidenav a:hover {
+   color: #f1f1f1;
+ }
+ 
+ /* Position and style the close button (top right corner) */
+ .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+ }
+ 
+ /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+ #main {
+   transition: margin-left .5s;
+   padding: 20px;
+ }
+ 
+ /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
