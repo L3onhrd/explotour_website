@@ -1,2 +1,2 @@
 # explotour_website
-A frontend website built with HTML, CSS, and Javascript.
+A personal project  website, created with HTML, CSS, and Javascript, with the website’s purpose of spreading information regarding Indonesia’s cultural heritage.
